@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="dist/output.css">
-</head>
-<body class="font-sans">
-  <main>
-    <header>
-      <h1>Skilled</h1>
-  <button class="">Get Started</button>
-</header>
-  <h2>Maximize skill, minimize budget</h2>
-
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
-
-  Get Started
-
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-</main>
-</body>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="font-sans">
+    <main>
+      <header class="flex flex-row justify-between align-center px-8 py-5">
+        <h1 class="text-sk-navy text-3xl">Skilled</h1>
+        <button class="py-2 px-6 bg-sk-navy text-xl rounded-full">
+          Get Started
+        </button>
+      </header>
+      <div class="top-flex-wrapper">
+        <section class="first-part">
+          <h2 class="text-sk-navy text-4xl font-extrabold px-8 py-10">Maximize skill, <br />minimize budget</h2>
+          <p class="px-8 text-sk-light-grey">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <button class="call-to-action mx-8 my-5 py-2 px-6 text-xl rounded-full ">Get Started</button>
+        </section>
+        <picture>
+          <source
+            srcset="./src/assets/image-hero-desktop@2x.webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./src/assets/image-hero-tablet.webp,
+              ./src/assets/image-hero-desktop.webp
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./src/assets/image-hero-mobile.png"
+            alt="A woman relaxing, 1451 course hours, 29k members"
+            width="435"
+            height="409"
+            loading="lazy"
+            decoding="async"
+            srcset="
+              ./src/assets/image-hero-mobile.png   1x,
+              ./src/assets/image-hero-tablet.webp  2x,
+              ./src/assets/image-hero-desktop.webp 3x
+            "
+          />
+        </picture>
+      </div>
+      <section class="course-descriptions">
+        <section class="pink-box">Check out our most popular courses!</section>
+        <article>
+          <img src="./src/assets/icon-animation.svg" class="icon-pic" />
+          <h3>Animation</h3>
+          <p>
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="#" class="small-cta">Get Started</a>
+        </article>
+        <article>
+          <img src="./src/assets/icon-design.svg" class="icon-pic" />
+          <h3>Design</h3>
+          <p>
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="#" class="small-cta">Get Started</a>
+        </article>
+        <article>
+          <img src="./src/assets/icon-photography.svg" class="icon-pic" />
+          <h3>Photography</h3>
+          <p>
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="#" class="small-cta">Get Started</a>
+        </article>
+        <article>
+          <img src="./src/assets/icon-crypto.svg" class="icon-pic" />
+          <h3>Crypto</h3>
+          <p>
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="#" class="small-cta">Get Started</a>
+        </article>
+        <article>
+          <img src="./src/assets/icon-business.svg" class="icon-pic" />
+          <h3>Business</h3>
+          <p>
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="#" class="small-cta">Get Started</a>
+        </article>
+      </section>
+      <footer>
+        <span class="footer-logo">Skilled</span>
+        <button class="footer-btn">Get Started</button>
+      </footer>
+    </main>
+  </body>
 </html>
