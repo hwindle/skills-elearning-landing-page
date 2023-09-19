@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 main {
-  background-color: #ccc;
+  background-image: linear-gradient(180deg, transparent, #F6F6Fd);
   font-size: 18px;
 }
 
 header, div.top-flex-wrapper {
-  background-color: white;
+  /* background-color: white; */
 }
 
 header > h1 {
@@ -23,17 +23,62 @@ header > button {
 }
 
 picture {
-  background-color: white;
+  /* background-color: white; */
   max-width: 100%;
   margin: 0 auto;
-  z-index: -2;
+  /* z-index: -2; */
+}
+
+/* course descriptions section */
+section.course-descriptions {
+  display: grid;
+  gap: 1rem;
 }
 
 /* section - first part */
 button.call-to-action {
   background-image: linear-gradient(0deg, #F02AA6, #FF6F48);
   color: white;
+}
 
+section.pink-box {
+  background-image: linear-gradient(0deg, #F02AA6, #FF6F48);
+  color: white;
+  border-radius: 1rem;
+  max-width: 18ch;
+}
+
+/* articles for courses */
+article {
+  margin-top: 2rem;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+article > h3 {
+  margin-top: 30px;
+  color: #13183F;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+article > p {
+  padding: 1rem 0;
+  max-width: 30ch;
+  color: #83869A;
+}
+
+article > img.icon-pic {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+
+article > a {
+  color:#F02AA6;
+  font-weight: 700;
 }
 
 /***
@@ -56,6 +101,14 @@ button.call-to-action {
   header {
     padding-right: 70px;
   }
+
+  section.course-descriptions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.pink-box {
+    width: 100%;
+  }
 }
 
 /* desktop */
@@ -68,5 +121,9 @@ button.call-to-action {
 
   header {
     padding-right: 120px;
+  }
+
+  section.course-descriptions {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

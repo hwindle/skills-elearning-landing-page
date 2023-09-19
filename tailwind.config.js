@@ -14,6 +14,7 @@ module.exports = {
       'sk-pink-grad-btm': '#FF6F48',
       'sk-viol-grad-top': '#4851FF',
       'sk-viol-grad-btm': '#F02AA6',
+      'sk-bg-light-grey': '#F6F6Fd',
     },
     fontFamily: {
       sans: ['Plus Jakarta Sans', 'sans-serif'],
