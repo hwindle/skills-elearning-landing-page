@@ -20,45 +20,39 @@
         <button class="py-2 px-6 bg-sk-navy text-xl rounded-full">
           Get Started
         </button>
+        <!-- <div class="hero-img-spacer"></div> -->
       </header>
       <div class="top-flex-wrapper">
         <section class="first-part">
-          <h2 class="text-sk-navy text-4xl font-extrabold px-5 py-10">Maximize skill, <br />minimize budget</h2>
+          <h2 class="text-sk-navy text-4xl font-extrabold px-5 py-10">
+            Maximize skill, <br />minimize budget
+          </h2>
           <p class="px-8 text-sk-light-grey">
             Our modern courses across a range of in-demand skills will give you
             the knowledge you need to live the life you want.
           </p>
-          <button class="call-to-action mx-5 my-5 py-2 px-6 text-xl rounded-full ">Get Started</button>
+          <button
+            class="call-to-action mx-5 my-5 py-2 px-6 text-xl rounded-full"
+          >
+            Get Started
+          </button>
         </section>
-        <picture>
-          <source
-            srcset="./src/assets/image-hero-desktop@2x.webp"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./src/assets/image-hero-tablet.webp,
-              ./src/assets/image-hero-desktop.webp
-            "
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./src/assets/image-hero-mobile.png"
-            alt="A woman relaxing, 1451 course hours, 29k members"
-            width="435"
-            height="409"
-            loading="lazy"
-            decoding="async"
-            srcset="
-              ./src/assets/image-hero-mobile.png   1x,
-              ./src/assets/image-hero-tablet.webp  2x,
-              ./src/assets/image-hero-desktop.webp 3x
-            "
-          />
-        </picture>
+        <img
+          src="./src/assets/image-hero-desktop@2x.webp"
+          class="desktop-hero-image"
+          aria-hidden="true"
+        />
+
+        <img
+          src="./src/assets/image-hero-mobile.png"
+          alt="A woman relaxing, 1451 course hours, 29k members"
+          class="mobile-hero-image"
+        />
       </div>
       <section class="course-descriptions flex gap-20 mx-5">
-        <section class="pink-box text-xl px-4 py-8">Check out our most popular courses!</section>
+        <section class="pink-box text-xl px-4 py-8">
+          Check out our most popular courses!
+        </section>
         <article>
           <img src="./src/assets/icon-animation.svg" class="icon-pic" />
           <h3>Animation</h3>
