@@ -2392,7 +2392,9 @@ header > h1 {
 
 header > button {
   border: none;
+  background-color: #13183F;
   color: white;
+  z-index: 2;
 }
 
 header > button:hover {
